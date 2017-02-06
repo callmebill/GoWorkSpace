@@ -12,7 +12,7 @@ import (
 	//	"stringutil"
 )
 
-func cal(problem, opertion string) int {
+func Cal(problem, opertion string) int {
 	subStrings := strings.Split(problem, opertion)
 	num1, _ := strconv.Atoi(subStrings[0])
 	num2, _ := strconv.Atoi(subStrings[1])
@@ -33,13 +33,13 @@ func SimpleServer(w http.ResponseWriter, request *http.Request) {
 	path := request.URL.Path[1:]
 	var result = 0
 	if strings.Contains(path, "+") {
-		result = cal(path, "+")
+		result = Cal(path, "+")
 	} else if strings.Contains(path, "*") {
-		result = cal(path, "*")
+		result = Cal(path, "*")
 	} else if strings.Contains(path, "-") {
-		result = cal(path, "-")
+		result = Cal(path, "-")
 	} else if strings.Contains(path, "/") {
-		result = cal(path, "/")
+		result = Cal(path, "/")
 	}
 	fmt.Println("path: %v ", path)
 	fmt.Println("request.URL.String(): %v ", request.URL.String())

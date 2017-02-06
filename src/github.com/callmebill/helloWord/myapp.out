@@ -1,0 +1,22 @@
+mode: set
+github.com/callmebill/helloWord/main.go:15.40,19.38 4 1
+github.com/callmebill/helloWord/main.go:28.2,28.10 1 0
+github.com/callmebill/helloWord/main.go:19.38,21.3 1 1
+github.com/callmebill/helloWord/main.go:21.3,21.45 1 1
+github.com/callmebill/helloWord/main.go:21.45,23.3 1 1
+github.com/callmebill/helloWord/main.go:23.3,23.45 1 1
+github.com/callmebill/helloWord/main.go:23.45,25.3 1 0
+github.com/callmebill/helloWord/main.go:25.3,27.3 1 1
+github.com/callmebill/helloWord/main.go:32.65,35.33 3 0
+github.com/callmebill/helloWord/main.go:44.2,46.41 3 0
+github.com/callmebill/helloWord/main.go:35.33,37.3 1 0
+github.com/callmebill/helloWord/main.go:37.3,37.40 1 0
+github.com/callmebill/helloWord/main.go:37.40,39.3 1 0
+github.com/callmebill/helloWord/main.go:39.3,39.40 1 0
+github.com/callmebill/helloWord/main.go:39.40,41.3 1 0
+github.com/callmebill/helloWord/main.go:41.3,41.40 1 0
+github.com/callmebill/helloWord/main.go:41.40,43.3 1 0
+github.com/callmebill/helloWord/main.go:50.13,52.58 2 0
+github.com/callmebill/helloWord/main.go:52.58,53.13 1 0
+github.com/callmebill/helloWord/main.go:57.28,58.16 1 0
+github.com/callmebill/helloWord/main.go:58.16,60.3 1 0
