@@ -1,15 +1,25 @@
 FROM golang:latest
- 
+
 MAINTAINER Huang zhigang <http://huangzhigang1024@qq.com>
 
 ENV GOROOT /usr/local/go
 
-ENV GOPATH /goworkspace
+ENV GOPATH /GoWorkSpace
+
+ENV GOBIN  $GOPATH/bin
 
 ENV PATH $GOROOT/bin:$PATH
 
-ADD /var/jenkins_home/workspace/todo &GOPATH
+RUN apt-get install -y git
 
-ENTRYPOINT $GOPATH/bin/todos
+WORKDIR /
+
+RUN git clone git://github.com/callmebill/GoWorkSpace.git
+
+WORKDIR $GOPATH/src/github.com/callmebill/todolist/
+
+RUN go install main.go
+
+ENTRYPOINT $GOPATH/bin/main
 
 EXPOSE 8888
